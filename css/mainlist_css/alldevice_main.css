@@ -1,0 +1,504 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*----------------------TAGS-------------------------*/
+body {
+	width: 100%;
+	background-color: rgba(0,0,2,1);
+}
+
+header{
+	width: 100%;
+	background: rgba(0,5,25,1);
+	padding-top: 20px;
+	text-align: left;
+}
+
+.main{
+	width: 100%;
+	min-height: 800px;
+	background: rgba(0,0,2,1);
+	background-size: 600px 800px;	
+	background-image: url('../../images/1.jpg');
+	background-repeat: repeat-x;
+	background-position: center top;	
+}
+
+footer{
+	width: 100%;
+	background-color: rgba(0,0,2,1);	
+}
+
+h1{
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+h2{
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+}
+
+a, p{
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+}
+
+section{
+	text-align: justify;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+ul{
+	margin-top: 20px;
+}
+
+.sidebar_li{
+	margin-top: 20px;
+	list-style-type: none;
+} 
+
+.main_li{
+	margin-left: 15px;
+	color: white;
+}
+
+/*HEADER_CONTAINER*/
+
+.logotype{
+	border-radius: 20px;
+    background-image: url('../../images/logotype.svg');  
+	background-color: rgba(0, 10, 70, 0.4);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.header_container{
+	text-align: center;
+	border-radius: 20px;
+	background-color: rgba(0, 10, 70, 0.4);
+}
+
+.header_nav{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 30px;
+	height: 100%;
+}
+
+.header_nav_img{
+	display: inline-block;
+	vertical-align: top;
+	width: 10%;
+	height: 100%;
+	margin-left: 1%;
+	background-image: url('../../images/picture3.png');
+	background-size: 60px 50px;
+	background-repeat: no-repeat;
+}
+
+/*--------------------------------SADEBAR-----------------------------*/
+.sidebar_container{
+	text-align: center;
+	background-color: rgba(0, 10, 70, 0.4);
+}
+
+.nav_name{
+	margin-top: 10px;
+}
+
+.stat_name{
+	margin-top: 10px;
+}
+
+.nav_line_1{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 90%;
+}
+
+.nav_line_2{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 70%;
+}
+
+/*----------------------------MAIN_CONTAINER--------------------------*/
+.main_container{
+	border-radius: 20px;
+	background-color: rgba(0, 10, 70, 0.4);
+}
+
+.h1_main{
+	text-align: left;
+}
+
+.h2_main{
+	text-align: left;
+}
+
+.main_line{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 99%;
+}
+
+.text{
+	margin-top: 10px;
+}
+
+/*------------------------------TEST----------------------------------------*/
+.test_line{
+	width: 95%;
+	margin-top: 10px;
+}
+
+.radio_button{
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+.test_li{
+	color: rgba(255, 255, 255, 1);
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+#button_test{
+	border-radius: 20px;
+	height: 40px;
+	width: 120px;
+	cursor: pointer;
+	border-color: rgba(0, 10, 70, 1);
+	font-size: 14px;
+}
+
+#finish_test{
+	display: none;
+	
+}
+
+#finish_test p {
+	display: none;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin: 0 auto;
+	margin-top: 40px;
+    color: white; 
+	width: 95%;
+}
+
+.f-links{
+	text-align: center;
+}
+
+.info{
+	display: block;
+	min-height: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	
+}
+
+.description{
+	color: white;
+	text-align: center;
+}
+
+.decoration{
+	display: block;
+	width: 100%;
+	height: 19px;
+	background-image: url('../../images/picture1.png');
+	background-repeat: repeat-x;
+    background-size: 100px 100%;
+	background-position: center;
+}
+
+/*---------------------------------------------ДЛЯ БОЛЬШИХ ЭРАНОВ-------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px){
+	
+header{
+	min-height: 100px;
+}
+
+footer{
+	min-height: 210px;
+}
+
+/*HEADER_CONTAINER*/
+.logotype{
+    display: inline-block; 
+	vertical-align: top;
+	width: 20%;
+	height: 80px;
+	margin-left: 2%;
+}
+
+.header_container{
+	display: inline-block; 
+	vertical-align: top;
+	width: 74%;
+	height: 80px;
+	margin-left: 2%;
+}
+
+.header_nav{
+	width: 30%;
+}
+
+.header_nav_img{
+	margin-top: 15px;
+}
+
+.menu{
+	display: none;
+}
+
+/*--------------------------------SADEBAR-----------------------------*/
+.sidebar_container{
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 20px;
+	margin-left: 2%;
+	height: 940px;
+	width: 25%;
+}
+
+.your_links{
+	font-size: 20px;
+}
+
+.nav_name{
+	font-size: 24px;
+}
+
+.stat_name{
+    font-size: 22px;
+}
+
+/*----------------------------MAIN_CONTAINER--------------------------*/
+.main_container{
+	display: inline-block;
+	vertical-align: top;
+	width: 69%;
+	min-height: 940px;
+	margin-left: 2%;
+}
+
+.h1_main{
+	font-size: 30px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.h2_main{
+	font-size: 26px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.text{
+	font-size: 20px; 
+}
+
+/*----------------------------------CLASS FOOTER DETALS-----------------------------------*/
+.button_block{
+	display: none;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 7px;
+	margin-left: 2.1%;
+	margin-right: 2.1%;
+}
+
+.decoration{
+	margin-top: 5px;	
+}
+
+.description{
+	font-size: 9px;
+}
+
+.footer-br{
+	display: none;
+}
+}
+
+/*---------------------------------------------ДЛЯ МАЛЕНЬКИХ ЭРАНОВ-------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1023px){
+	
+header{
+	min-height: 200px;
+	padding-top: 40px;
+}
+
+footer{
+	min-height: 210px;
+	
+}
+
+/*HEADER_CONTAINER*/
+.logotype{
+    display: block; 
+	width: 40%;
+	height: 80px;
+    margin: 0 auto;
+}
+
+.header_container{
+	display: block;
+	text-align: center;
+	width: 95%;
+	height: 80px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.header_nav{
+	width: 40%;
+}
+
+.header_nav_img{
+	display: none;
+}
+
+.menu{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	height: 30px;
+	cursor: pointer;
+	padding-top: 1px;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.menu-line{
+	display: block;
+	height: 3px;
+	width: 30px;
+	margin: 0 auto;
+	margin-top: 5px; 
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/*--------------------------------SADEBAR-----------------------------*/
+.sidebar_container{
+	position: fixed;
+	height: 90%;
+	width: 100%;
+	top: 40px;
+	left: -1100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgba(0, 0, 25, 0.4);
+	overflow-y: scroll;
+}
+
+.sidebar_container.sidebar_on{
+	left: 0px;
+}
+
+.dark{
+	height: 0;
+	width: 0;
+}
+
+.darkness{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.nav_name{
+	font-size: 26px;
+}
+
+.stat_name{
+    font-size: 24px;
+}
+
+.your_links{
+	font-size: 20px;
+}
+
+/*----------------------------MAIN_CONTAINER--------------------------*/
+.main_container{
+	display: block;
+	vertical-align: top;
+	width: 95%;
+	min-height: 800px;
+	margin: 0 auto;
+}
+
+.main_hidden{
+	overflow: hidden;
+}
+
+.h1_main{
+	font-size: 26px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.h2_main{
+	font-size: 22px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+.text{
+	font-size: 18px; 
+}
+
+/*----------------------------------CLASS FOOTER DETALS-----------------------------------*/
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.info{
+	margin-top: 70px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.decoration{
+	margin-top: 20px;
+}
+
+.description{
+	font-size: 9px;
+}
+
+.footer-br{
+	display: none;
+}
+}

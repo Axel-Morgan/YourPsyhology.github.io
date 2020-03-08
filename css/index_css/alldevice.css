@@ -1,0 +1,997 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*----------------------TAGS-------------------------*/
+body {
+	width: 100%;
+	min-height: 700px;
+	background-color: rgba(0,0,2,1);
+}
+
+header{
+	min-height: 50px;
+	width: 100%;
+	background: rgba(0,5,25,1);
+	text-align: center;
+}
+
+.main{
+	width: 100%;
+	background-color: rgba(0,0,2,1);
+	background-image: url('../../images/1.jpg');
+	background-repeat: repeat-x;
+	background-position: center;
+	
+}
+
+footer{
+	width: 100%;
+	background-color: rgba(0,0,2,1);
+	overflow: hidden;
+}
+
+h1{
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-family: tangakregular; 
+}
+
+h2{
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-family: 'scrimson-regular';
+}
+
+h3{
+	color: rgba(255, 255, 255, 1);
+	text-align: center;
+	font-family: 'scrimson-regular';
+}
+
+a, p{
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	font-family: 'scrimson-regular';
+}
+
+button{
+	margin-left: 4%;
+	border: none; 
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
+	font-family: 'scrimson-regular';
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+/*First block with lines*/
+.one-line{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	margin-top: -75px;
+}
+
+.line-left-one{
+	display: inline-block;
+	height: 5px;
+}
+
+.line-right-one{
+	display: inline-block;
+	height: 5px;
+}
+
+/*Second block with lines*/
+.two-line{
+	position: relative;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.line-left-two{
+	display: inline-block;
+	height: 10px;
+}
+
+.line-right-two{
+	display: inline-block;
+	height: 10px;
+}
+
+/*Under block with lines*/
+.line-under-text-one{
+    border: none; 
+	margin: 0 auto;
+	margin-top: 30px;
+    background-color: rgba(255, 255, 255, 1); 
+    color: white; 
+	width: 30%;
+    height: 1px; 
+}
+
+.line-under-text-two{
+    border: none; 
+	margin: 0 auto;
+	margin-top: 10px;
+    background-color: rgba(255, 255, 255, 1); 
+    color: white; 
+	width: 25%;
+    height: 1px; 
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	width: 100%;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.circle{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-image: url('../../images/picture2.png');
+	background-size: 100% 100%;
+	transform: rotate(320deg);
+    animation: target1 20s infinite linear;
+}
+
+.reverse{
+    animation: target2 20s infinite linear;
+}
+
+.circle-link{
+    position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.indent{
+	line-height: 1.4em;
+}
+
+/*------------------CLASS ADDITIONAL INFORMATION------------------*/
+
+.info_block{
+	position: absolute;
+	margin-left: 36.5%;
+	padding: 10px 10px 10px 10px; 
+	width: 25%;
+	margin-top: 120px;
+	background-color: rgba(0,0,10,0.5);
+    border: 20px;
+    border-radius: 5px; 
+	text-align: justify;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin: 0 auto;
+	margin-top: 40px;
+    color: white; 
+	width: 95%;
+}
+
+.f-links{
+	text-align: center;
+}
+
+.info{
+	position: relative;
+	padding-bottom: 20px;
+	width: 100%;
+	height: 40px;
+}
+
+.description{
+	color: white;
+	text-align: center;
+}
+
+.decoration{
+	position: relative;
+	width: 100%;
+	height: 19px;
+	background-image: url('../../images/picture1.png');
+	background-repeat: repeat-x;
+    background-size: 100px 100%;
+	background-position: center;
+}
+
+/*------------------------------ANIMATOR COMPONENT----------------------------------------*/
+@keyframes target1 {
+from {
+ transform: rotate(0deg);
+}
+to {
+ transform: rotate(360deg);
+}
+}
+
+@keyframes target2 {
+from {
+ transform: rotate(0deg);
+}
+to {
+ transform: rotate(-360deg);
+}
+}
+
+/*------------------------------FONTS----------------------------------------*/
+@font-face{
+    font-family: 'tangakregular';
+    src: url('../../fonts/tangak1-webfont.woff2') format('woff2'),
+         url('../../fonts/tangak1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+    font-family: 'scrimsonregular';
+    src: url('../../fonts/crimson-text-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/crimson-text-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1920px){
+/*------------------TAGS------------------*/
+.main{
+	min-height: 820px;
+    background-size: 580px 100%;
+}
+
+footer{
+	min-height: 220px;
+}
+
+h1{
+	font-size: 100px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+button{
+	font-size: 20px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+/*First block with lines*/
+.line-left-one{
+	width: 20%;
+	margin-right: 320px;
+}
+
+.line-right-one{
+	width: 20%;
+	margin-left: 320px;
+}
+
+/*Second block with lines*/
+.line-left-two{
+	width: 20%;
+	margin-right: 210px;
+}
+
+.line-right-two{
+	width: 20%;
+	margin-left: 210px;
+}
+
+
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 250px;
+}
+
+.circle1{
+	display: inline-block;
+	margin-right: 200px;
+	height: 450px;
+	width: 450px;
+}
+
+.circle2{
+	display: inline-block;
+	margin-left: 200px;
+	height: 450px;
+	width: 450px;
+}
+
+.circle-link{
+	margin-top: -67.2%;
+	width: 250px;
+	height: 220px;
+	font-size: 50px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.button_block{
+	display: none;
+}
+
+.links{
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-left: 2.1%;
+	margin-right: 2.1%;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.decoration{
+	margin-top: 20px;
+}
+
+.description{
+	font-size: 16px;
+}
+
+.footer-br{
+	display: none;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1280px) and (max-width: 1919px){
+	
+/*------------------TAGS------------------*/
+.main{
+	min-height: 520px;
+    background-size: 420px 100%;
+}
+
+footer{
+	min-height: 240px;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+button{
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+/*First block with lines*/
+.line-left-one{
+	width: 20%;
+	margin-right: 270px;
+}
+
+.line-right-one{
+	width: 20%;
+	margin-left: 270px;
+}
+
+/*Second block with lines*/
+.line-left-two{
+	width: 20%;
+	margin-right: 160px;
+}
+
+.line-right-two{
+	width: 20%;
+	margin-left: 160px;
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 250px;
+}
+
+.circle1{
+	display: inline-block;
+	margin-right: 15%;
+	height: 250px;
+	width: 250px;
+}
+
+.circle2{
+	display: inline-block;
+	margin-left: 15%;
+	height: 250px;
+	width: 250px;
+}
+
+.circle-link{
+    margin-top: -67.2%;
+	width: 125px;
+	height: 125px;
+	font-size: 30px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.button_block{
+	display: none;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-left: 2.1%;
+	margin-right: 2.1%;
+}
+
+.decoration{
+	margin-top: 5px;	
+}
+
+.description{
+	font-size: 9px;
+}
+
+.footer-br{
+	display: none;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1279px) and (min-width: 1024px){
+/*------------------TAGS------------------*/
+.main{
+	height: 520px;
+    background-size: 420px 100%;
+}
+
+footer{
+	height: 240px;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+button{
+	font-size: 14px;
+	margin-right: 2.1%;
+	margin-left: 2.1%;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+/*First block with lines*/
+.line-left-one{
+	width: 20%;
+	margin-right: 270px;
+}
+
+.line-right-one{
+	width: 20%;
+	margin-left: 270px;
+}
+
+/*Second block with lines*/
+.line-left-two{
+	width: 20%;
+	margin-right: 160px;
+}
+
+.line-right-two{
+	width: 20%;
+	margin-left: 160px;
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 250px;
+}
+
+.circle1{
+	display: inline-block;
+	margin-right: 200px;
+	height: 250px;
+	width: 250px;
+}
+
+.circle2{
+	display: inline-block;
+	margin-left: 200px;
+	height: 250px;
+	width: 250px;
+}
+
+.circle-link{
+    margin-top: -67.2%;
+	width: 125px;
+	height: 125px;
+	font-size: 30px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.button_block{
+	display: none;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: inline-block;
+	margin-bottom: 7px;
+	margin-left: 1.2%;
+	margin-right: 1.2%;
+}
+
+.decoration{
+	margin-top: 5px;
+}
+
+.description{
+	font-size: 9px;
+}
+
+.footer-br{
+	display: none;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1023px) and (min-width: 768px){
+/*------------------TAGS------------------*/
+.main{
+	height: 1000px;
+    background-size: 570px 100%;
+}
+
+footer{
+	height: 600px;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+button{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+/*First block with lines*/
+.line-left-one{
+	width: 15%;
+	margin-right: 260px;
+}
+
+.line-right-one{
+	width: 15%;
+	margin-left: 260px;
+}
+
+/*Second block with lines*/
+.line-left-two{
+	width: 15%;
+	margin-right: 160px;
+}
+
+.line-right-two{
+	width: 15%;
+	margin-left: 160px;
+}
+
+
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 710px;
+}
+
+.circle1{
+	display: block;
+	margin: 0 auto;
+	height: 330px;
+	width: 330px;
+}
+
+.circle2{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 330px;
+	width: 330px;
+}
+
+.circle-link{
+	margin-top: -64.3%;
+	width: 170px;
+	height: 105px;
+	font-size: 34px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.decoration{
+	margin-top: 5px;
+}
+
+.description{
+	font-size: 9px;
+}
+
+.footer-br{
+	display: none;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) and (min-width: 600px) {
+/*------------------TAGS------------------*/
+.main{
+	height: 1000px;
+    background-size: 570px 100%;
+}
+
+footer{
+	height: 600px;
+}
+
+h1{
+	font-size: 80px;
+}
+
+h2{
+	font-size: 18px;
+}
+
+button{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+.off-line{
+	display: none;
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 710px;
+}
+
+.circle1{
+	display: block;
+	margin: 0 auto;
+	height: 330px;
+	width: 330px;
+}
+
+.circle2{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 330px;
+	width: 330px;
+}
+
+.circle-link{
+	margin-top: -64.3%;
+	width: 170px;
+	height: 105px;
+	font-size: 34px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.decoration{
+	margin-top: 30px;
+}
+
+.description{
+	font-size: 9.6px;
+}
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 599px) and (min-width: 480px){
+/*------------------TAGS------------------*/	
+.main{
+	height: 1000px;
+    background-size: 570px 100%;
+}
+
+footer{
+	height: 600px;
+}
+
+h1{
+	font-size: 75px;
+}
+
+h2{
+	font-size: 16px;
+}
+
+button{
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+.off-line{
+	display: none;
+}
+
+
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 710px;
+}
+
+.circle1{
+	display: block;
+	margin: 0 auto;
+	height: 330px;
+	width: 330px;
+}
+
+.circle2{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 330px;
+	width: 330px;
+}
+
+.circle-link{
+	margin-top: -64.3%;
+	width: 170px;
+	height: 105px;
+	font-size: 34px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.info{
+	margin-top: 90px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 30px;
+}
+
+.decoration{
+	margin-top: 30px;
+}
+
+.description{
+	font-size: 8px;
+}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 479px){
+	
+	
+	
+/*------------------TAGS------------------*/	
+.main{
+	height: 800px;
+    background-size: 520px 100%;
+}
+
+footer{
+	height: 510px;
+}
+
+h1{
+	font-size: 55px;
+}
+
+h2{
+	font-size: 13px;
+}
+
+button{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+.off-line{
+	display: none;
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 710px;
+}
+
+.circle1{
+	display: block;
+	margin: 0 auto;
+	height: 250px;
+	width: 250px;
+}
+
+.circle2{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 250px;
+	width: 250px;
+}
+
+.circle-link{
+	margin-top: -67.2%;
+	width: 170px;
+	height: 170px;
+	font-size: 29px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.info{
+	margin-top: 60px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.decoration{
+	margin-top: 30px;
+}
+
+.description{
+	font-size: 6px;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 319px){
+/*------------------TAGS------------------*/	
+.main{
+	height: 650px;
+    background-size: 220px 100%;
+}
+
+footer{
+	height: 490px;
+}
+
+h1{
+	font-size: 40px;
+}
+
+h2{
+	font-size: 8px;
+}
+
+button{
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/*------------------------------CLASS UP-MAIN----------------------------------------*/
+.off-line{
+	display: none;
+}
+
+/*------------------CLASS CIRCLES WITH LINKS------------------*/
+.main-links{
+	height: 710px;
+}
+
+.circle1{
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+}
+
+.circle2{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	height: 200px;
+	width: 200px;
+}
+
+.circle-link{
+	margin-top: -67.2%;
+	width: 170px;
+	height: 170px;
+	font-size: 25px;
+}
+
+/*------------------------------CLASS FOOTER DETAILS----------------------------------------*/
+.footer-line{
+	margin-bottom: 40px;
+}
+
+.links{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+.info{
+	margin-top: 60px;
+}
+
+.decoration{
+	margin-top: 30px;
+}
+
+.description{
+	font-size: 5px;
+}
+}
